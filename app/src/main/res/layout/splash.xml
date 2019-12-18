@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplashActivity" >
+
+    <TextView
+        android:id="@+id/tituloUno"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:background="#3C3F41"
+        android:gravity="center"
+        android:text="Splash Screen"
+        android:textColor="#00BCD4"
+        android:textSize="36sp"
+        app:fontFamily="@font/aclonica" />
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="match_parent"
+        android:layout_height="287dp"
+        android:src="@drawable/quizo" />
+
+    <TextView
+        android:id="@+id/tituloUno2"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="#91FFF6"
+        android:gravity="center"
+        android:text="Quizo bonito"
+        android:textColor="#9C27B0"
+        android:textSize="36sp"
+        app:fontFamily="@font/aclonica" />
+
+    <TextView
+        android:id="@+id/tituloUno3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="v 1.0"
+        android:textColor="#FF5722"
+        android:textSize="36sp"
+        app:fontFamily="@font/aclonica" />
+
+</LinearLayout>
