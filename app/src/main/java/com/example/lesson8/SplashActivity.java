@@ -2,8 +2,11 @@ package com.example.lesson8;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -43,7 +46,20 @@ public class SplashActivity extends QuizActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
         animacion();
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent=new Intent(SplashActivity.this,QuizMenuActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        },3000);
+
     }
+
+
 
     public void animacion() {
         ImageView icon = findViewById(R.id.icono);
@@ -51,6 +67,7 @@ public class SplashActivity extends QuizActivity {
         Animation animation_icono = AnimationUtils.loadAnimation(this, R.anim.fadein);
         Animation animation_titulo = AnimationUtils.loadAnimation(this, R.anim.show);
         icon.startAnimation(animation_icono);
-        titulo.startAnimation(animation_icono);
+        titulo.startAnimation(animation_titulo);
+        SystemClock.sleep(2000);
     }
 }

@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/shledon"
     tools:context=".QuizMenuActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="421dp"
+        android:layout_height="92dp"
+        android:background="#770909"
+        android:gravity="center"
+        android:text="Quizo bazingo"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/screen_title_size" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="381dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="3dp"
+        android:divider="@drawable/separador2"
+        android:paddingTop="10sp"
+        android:textSize="@dimen/menu_item_size" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="253dp"
+        android:layout_below="@+id/lista"
+        android:layout_marginTop="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bamboo" />
+
+</RelativeLayout>
